@@ -25,7 +25,7 @@
     <!-- desktop/tablet header -->
 <header class = "desktop--header">
     <image src = "./assets/Boho-kids-brown.svg"/>
-        <button>Sign Up</button>
+        <button id = "scrollButton" >Sign Up</button>
 </header>
 
 <!-- mobile header -->
@@ -41,13 +41,22 @@
     <image  class = "mobile--hero" src = "./assets/Furniture-hero-2.jpeg"/>
     <div>
         <h2>Our biggest sale of the year!</h2>
-        <h3>Countdown</h3>
+        <h3 id = "countdown">Countdown</h3>
     </div>
 </section>
+
+<section id = "carousel"></section>
+
+<form id = "signupForm" action="" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button class = "submitBtn" type="submit">Get Notified</button>
+</form>
 
     <!-- Script tags -->
     <script src="countdown.js"></script>
     <script type = "module" src="carousel.js"></script>
+
+
 </body>
 
 </html>
