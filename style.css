@@ -335,6 +335,7 @@ button:active {
 .desktop--hero {
     width: 100vw;
     transform: translateY(-15%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
 }
 
 .hero>div {
@@ -451,6 +452,7 @@ h3 {
     width: 100%;
     object-fit: cover;
     position: relative;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
 }
 
 /* form */
@@ -604,8 +606,9 @@ input{
         backdrop-filter: blur(30px);
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
         z-index: 10;
-        position: sticky;
+        position: absolute;
         top: 0%;
+        width:100vw
     }
 
     .mobile--header>button {
@@ -621,7 +624,9 @@ input{
     .mobile--hero {
         display: flex;
         width: 300vw;
+        overflow:hidden;
         transform: translateY(-10%);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
     }
 
     .hero>div {
