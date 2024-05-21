@@ -52,7 +52,7 @@ products.forEach(product => {
     priceContainer.appendChild(price)
 
     // sale price
-    const salePrice = document.createElement("h3")
+    const salePrice = document.createElement("h4")
     salePrice.textContent = `now $${product.salePrice}`
     salePrice.classList.add("salePrice")
     priceContainer.appendChild(salePrice)

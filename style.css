@@ -528,8 +528,8 @@ input{
         transform: translate(-50% -10%);
         overflow: hidden;
         position: relative;
-        height: 120vw;
-        width: 80vw
+        height: 100vw;
+        width: 80vw;
     }
 
     .prevArrow {
@@ -546,7 +546,7 @@ input{
 
 
     .productContainer {
-        height: auto
+        height: auto;
     }
 
     .textContainer {
