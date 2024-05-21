@@ -47,4 +47,7 @@ let interval = setInterval(updateCountdown, 900000)
     }
 
     const scrollButton = document.getElementById('scrollButton');
+    const mobileButton = document.getElementById('mobileScrollButton')
     scrollButton.addEventListener('click', scrollToForm);
+  mobileButton.addEventListener('click', scrollToForm);
+
