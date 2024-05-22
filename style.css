@@ -486,7 +486,6 @@ input{
     background-color: var(--color-white);
     backdrop-filter: blur(30px);
     border-radius: 50px;
-    margin-right: 10px;
     margin-bottom: 10px;
     transition: background-color .2s, color .2s, box-shadow .3s;
     box-shadow: var(--color-boho-l20) 0px 0px 20px;
@@ -530,6 +529,7 @@ input{
 
     .hero>div>h2 {
         font-size: 2em;
+        width:65vw
     }
 
     /* carousel */
