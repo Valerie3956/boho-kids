@@ -356,7 +356,12 @@ body{
 .hero>div>h2,
 h3 {
     color: var(--color-brown);
-    margin: 2rem 0 1rem 0
+    margin: 2rem 0 1rem 0;
+}
+
+.hero>div>h3{
+    width:50%
+
 }
 
 .mobile--hero {

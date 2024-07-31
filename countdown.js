@@ -6,7 +6,7 @@
 
 function updateCountdown(){
     
-    let saleDate = (new Date("june 25, 2024 00:00:00").getTime())
+    let saleDate = (new Date("june 25, 2025 00:00:00").getTime())
     
     // today's date and time
     
@@ -20,14 +20,17 @@ function updateCountdown(){
 
     let days = Math.floor(difference/(1000*60*60*24))
     let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    
+    let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+
     //select h2 and add countdown or sale has started announcement
 
     let countdown = document.getElementById("countdown")
     if (difference < 0) {
         countdown.textContent = ("Save now!");
     } else {
-        countdown.textContent = (`Save in ${days} days, ${hours} hours`)
+        countdown.textContent = (`Save in ${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds!`)
     }
 
 }
@@ -35,7 +38,7 @@ function updateCountdown(){
 // update countdown on initial render and every 15 minutes thereafter
 
 updateCountdown()
-let interval = setInterval(updateCountdown, 900000)
+let interval = setInterval(updateCountdown, 1000)
 
 
 //  Function to scroll to the form section when the button is clicked 
